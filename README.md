@@ -21,8 +21,7 @@
     <img src="https://img.shields.io/discord/688401603811999885" />
   </a>
 </p>
-<p align="center">Weather Dashboard in Home Assistant Dwains Dashboard.
-Shows issues, pull requests, and more from your github repositories</p>
+<p align="center">Weather Dashboard in Home Assistant Dwains Dashboard.</p>
 
 
 <p align="center">Created by <a href="https://github.com/LRvdLinden">Léon van der Linden</a>
