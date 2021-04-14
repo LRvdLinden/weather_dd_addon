@@ -37,13 +37,16 @@
 
 ## Prerequisite
 ---
-- Make sure you have installed the lovelace [github-flexi-card](https://github.com/LRvdLinden/github-flexi-card). This can be done manually or directly via hacs
+- Make sure you have installed the lovelace [mini-graph-card](https://github.com/kalkih/mini-graph-card) and the [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app). This can be done manually or directly via hacs
 
-![vb2](https://user-images.githubusercontent.com/77990847/114713688-a90b9900-9d31-11eb-9744-65cf714d2692.png)
+<img width="618" alt="image" src="https://user-images.githubusercontent.com/77990847/114733529-b6ca1a00-9d43-11eb-876a-6f4beda466ec.png">
+
 
 
 ## Make Home Assistant integration 
 ---
+Please reboot Home Assistant after vonfig the sensors!
+
 ### Buienradar sensor + Radar map
 - Make the integration with [Buienradar](https://www.home-assistant.io/integrations/sensor.buienradar/)
 - Choose `latitude` and `longtiude` from the correct [weather station](https://www.google.com/maps/d/embed?mid=1NivHkTGQUOs0dwQTnTMZi8Uatj0&ll=52.92957401169076%2C5.184999999999995&z=7) 
@@ -146,8 +149,7 @@ camera:
   - platform: season  
 ```
 
-## Make some HACS integration 
----
+
 - Install the the fronted lovelace [mini-graph-card](https://github.com/kalkih/mini-graph-card) from HACS or mannualy
 - Install the the integration [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app) from HACS or mannualy
 - Reboot Home Assistant
