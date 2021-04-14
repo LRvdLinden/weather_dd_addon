@@ -21,7 +21,7 @@
     <img src="https://img.shields.io/discord/688401603811999885" />
   </a>
 </p>
-<p align="center">Github monitoring in Home Assistant Dwains Dashboard.
+<p align="center">Weather Dashboard in Home Assistant Dwains Dashboard.
 Shows issues, pull requests, and more from your github repositories</p>
 
 
