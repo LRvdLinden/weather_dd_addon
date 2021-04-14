@@ -146,6 +146,10 @@ camera:
   - platform: season  
 ```
 
+## Make some HACS integration 
+---
+- Install the the fronted lovelace [mini-graph-card](https://github.com/kalkih/mini-graph-card) from HACS or mannualy
+- Install the the integration [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app) from HACS or mannualy
 - Reboot Home Assistant
 
 ## Installation Add-on
