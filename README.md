@@ -52,65 +52,66 @@ Please reboot Home Assistant after vonfig the sensors!
 - Choose `latitude` and `longtiude` from the correct [weather station](https://www.google.com/maps/d/embed?mid=1NivHkTGQUOs0dwQTnTMZi8Uatj0&ll=52.92957401169076%2C5.184999999999995&z=7) 
  ```yaml
      # Example configuration.yaml entry
-- platform: buienradar
-  name: "Apeldoorn"
- # Force 'Meetstation Apeldoorn' to be used:
-  latitude: 50.00
-  longitude: 5.00
-  monitored_conditions:
-    - stationname
-    - barometerfc
-    - barometerfcname
-    - conditioncode
-    - condition
-    - conditiondetailed
-    - conditionexact
-    - symbol
-    - feeltemperature
-    - humidity
-    - temperature
-    - groundtemperature
-    - windspeed
-    - windforce
-    - winddirection
-    - windazimuth
-    - pressure
-    - visibility
-    - windgust
-    - precipitation
-    - irradiance
-    - precipitation_forecast_average
-    - precipitation_forecast_total
-    - rainlast24hour
-    - rainlasthour
+sensor:
+  - platform: buienradar
+    name: "Apeldoorn"
+    # Force 'Meetstation Apeldoorn' to be used:
+    latitude: 50.00
+    longitude: 5.00
+    monitored_conditions:
+      - stationname
+      - barometerfc
+      - barometerfcname
+      - conditioncode
+      - condition
+      - conditiondetailed
+      - conditionexact
+      - symbol
+      - feeltemperature
+      - humidity
+      - temperature
+      - groundtemperature
+      - windspeed
+      - windforce
+      - winddirection
+      - windazimuth
+      - pressure
+      - visibility
+      - windgust
+      - precipitation
+      - irradiance
+      - precipitation_forecast_average
+      - precipitation_forecast_total
+      - rainlast24hour
+      - rainlasthour
       # conditions for forecasted data:
-    - symbol_1d
-    - symbol_2d
-    - symbol_3d
-    - symbol_4d
-    - symbol_5d
-    - temperature_1d
-    - temperature_2d
-    - temperature_3d
-    - temperature_4d
-    - temperature_5d
-    - mintemp_1d
-    - rainchance_1d
-    - rainchance_2d
-    - sunchance_1d
-    - sunchance_2d
-    - rain_1d
-    - rain_2d
-    - minrain_1d
-    - maxrain_1d
-    - windforce_1d
-    - windforce_2d
-    - windspeed_1d
-    - windspeed_2d
-    - winddirection_1d
-    - winddirection_2d
-    - windazimuth_1d
-    - windazimuth_2d
+      - symbol_1d
+      - symbol_2d
+      - symbol_3d
+      - symbol_4d
+      - symbol_5d
+      - temperature_1d
+      - temperature_2d
+      - temperature_3d
+      - temperature_4d
+      - temperature_5d
+      - mintemp_1d
+      - rainchance_1d
+      - rainchance_2d
+      - sunchance_1d
+      - sunchance_2d
+      - rain_1d
+      - rain_2d
+      - minrain_1d
+      - maxrain_1d
+      - windforce_1d
+      - windforce_2d
+      - windspeed_1d
+      - windspeed_2d
+      - winddirection_1d
+      - winddirection_2d
+      - windazimuth_1d
+      - windazimuth_2d
 ```
 
 
@@ -124,6 +125,7 @@ camera:
 ### KMNI sensor
 - Make the integration with [KNMI](https://www.home-assistant.io/integrations/scrape/)
  ```yaml
+sensor: 
   - platform: scrape
     resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
     select: "div.alert__heading"
@@ -140,12 +142,14 @@ camera:
 ### Moon sensor
 - Make the integration with [Moon](https://www.home-assistant.io/integrations/moon/)
  ```yaml
+sensor: 
   - platform: moon   
 ```
 
 ### Season sensor
 - Make the integration with [Season](https://www.home-assistant.io/integrations/season/)
  ```yaml
+sensor: 
   - platform: season  
 ```
 
