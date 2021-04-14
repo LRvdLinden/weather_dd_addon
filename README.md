@@ -45,7 +45,7 @@
 ## Make Home Assistant integration 
 ---
 ### Buienradar sensor + Radar map
-- Make the integration with [Github in Home Assistant](https://www.home-assistant.io/integrations/sensor.buienradar/)
+- Make the integration with [Buienradar](https://www.home-assistant.io/integrations/sensor.buienradar/)
 - Choose `latitude` and `longtiude` from the correct [weather station](https://www.google.com/maps/d/embed?mid=1NivHkTGQUOs0dwQTnTMZi8Uatj0&ll=52.92957401169076%2C5.184999999999995&z=7) 
  ```yaml
      # Example configuration.yaml entry
@@ -110,7 +110,7 @@
     - windazimuth_2d
 ```
 
-- Make the integration with [Buienradar radar map](https://www.home-assistant.io/integrations/sensor.buienradar/)
+
 
  ```yaml
 # Example configuration.yaml entry
