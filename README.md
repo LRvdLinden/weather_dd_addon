@@ -119,21 +119,7 @@ camera:
 ```
 
 ### KMNI sensor
- ```yaml
-  - platform: scrape
-    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
-    select: "div.alert__heading"
-    name: "knmi weercode"
-    scan_interval: 300
-
-  - platform: scrape
-    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
-    select: "a.alert__description"
-    name: "knmi weer waarschuwing"
-    scan_interval: 300    
-```
-
-### KMNI sensor
+- Make the integration with [KNMI](https://www.home-assistant.io/integrations/scrape/)
  ```yaml
   - platform: scrape
     resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
@@ -149,11 +135,13 @@ camera:
 ```
 
 ### Moon sensor
+- Make the integration with [Moon](https://www.home-assistant.io/integrations/moon/)
  ```yaml
   - platform: moon   
 ```
 
 ### Season sensor
+- Make the integration with [Season](https://www.home-assistant.io/integrations/season/)
  ```yaml
   - platform: season  
 ```
