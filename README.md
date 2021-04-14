@@ -118,7 +118,7 @@ camera:
   - platform: buienradar
 ```
 
-### KMNI
+### KMNI sensor
  ```yaml
 sensor:
   - platform: scrape
@@ -134,6 +134,33 @@ sensor:
     scan_interval: 300    
 ```
 
+### KMNI sensor
+ ```yaml
+sensor:
+  - platform: scrape
+    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
+    select: "div.alert__heading"
+    name: "knmi weercode"
+    scan_interval: 300
+
+  - platform: scrape
+    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
+    select: "a.alert__description"
+    name: "knmi weer waarschuwing"
+    scan_interval: 300    
+```
+
+### Moon sensor
+ ```yaml
+sensor:
+  - platform: moon   
+```
+
+### Season sensor
+ ```yaml
+sensor:
+  - platform: season  
+```
 
 ## Installation Add-on
 ---
