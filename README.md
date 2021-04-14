@@ -7,11 +7,11 @@
   <a href="https://github.com/custom-components/hacs">
     <img src="https://img.shields.io/badge/HACS-Default-orange.svg" />
   </a>
-  <a href="https://github.com/LRvdLinden/github_dd_addon">
-    <img src="https://img.shields.io/github/v/release/LRvdLinden/github_dd_addon" />
+  <a href="https://github.com/LRvdLinden/weather_dd_addon">
+    <img src="https://img.shields.io/github/v/release/LRvdLinden/weather_dd_addon" />
   </a>
-      <a href="https://github.com/LRvdLinden/github_dd_addon">
-    <img src="https://img.shields.io/github/downloads/LRvdLinden/github_dd_addon/latest/total?color=purple&label=%20release%20Downloads" />
+      <a href="https://github.com/LRvdLinden/weather_dd_addon">
+    <img src="https://img.shields.io/github/downloads/LRvdLinden/weather_dd_addon/latest/total?color=purple&label=%20release%20Downloads" />
   </a>
     <a href="https://github.com/LRvdLinden/">
     <img src="https://img.shields.io/github/followers/LRvdLinden?style=social" />
