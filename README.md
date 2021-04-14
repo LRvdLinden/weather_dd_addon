@@ -120,7 +120,6 @@ camera:
 
 ### KMNI sensor
  ```yaml
-sensor:
   - platform: scrape
     resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
     select: "div.alert__heading"
@@ -136,7 +135,6 @@ sensor:
 
 ### KMNI sensor
  ```yaml
-sensor:
   - platform: scrape
     resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
     select: "div.alert__heading"
@@ -152,15 +150,15 @@ sensor:
 
 ### Moon sensor
  ```yaml
-sensor:
   - platform: moon   
 ```
 
 ### Season sensor
  ```yaml
-sensor:
   - platform: season  
 ```
+
+- Reboot Home Assistant
 
 ## Installation Add-on
 ---
