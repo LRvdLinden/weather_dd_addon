@@ -322,7 +322,8 @@ entities:
 
 ## Result
 ---
-![voorbeeld github](https://user-images.githubusercontent.com/77990847/114712144-0c94c700-9d30-11eb-8737-23c7891f5b56.png)
+![vd-weer](https://user-images.githubusercontent.com/77990847/114725586-e590c200-9d3c-11eb-8c2d-ad4bbd616815.png)
+
 
 
 ---
