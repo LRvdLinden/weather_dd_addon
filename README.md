@@ -149,6 +149,12 @@ camera:
   - platform: season  
 ```
 
+### Sun integration
+- Make the integration with [Sun](https://www.home-assistant.io/integrations/sun/)
+```yaml
+# Example configuration.yaml entry
+sun:
+```
 
 ## Installation Add-on
 ---
