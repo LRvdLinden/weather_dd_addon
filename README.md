@@ -44,40 +44,96 @@
 
 ## Make Home Assistant integration 
 ---
-- Make the integration with [Github in Home Assistant](https://www.home-assistant.io/integrations/github/)
-- Restart Home Assistant
+### Buienradar sensor + Radar map
+- Make the integration with [Github in Home Assistant](https://www.home-assistant.io/integrations/sensor.buienradar/)
+- Choose `latitude` and `longtiude` from the correct [weather station](https://www.google.com/maps/d/embed?mid=1NivHkTGQUOs0dwQTnTMZi8Uatj0&ll=52.92957401169076%2C5.184999999999995&z=7) 
  ```yaml
      # Example configuration.yaml entry
-     sensor:
-       - platform: github
-         access_token: !secret github_access_token
-         repositories:
-           - path: 'LRvdLinden/automations_dd_addon' #path Github URL
-             name: Automations Dashboard Dwains Add-on #custom name sensor
+- platform: buienradar
+  name: "Apeldoorn"
+ # Force 'Meetstation Apeldoorn' to be used:
+  latitude: 50.00
+  longitude: 5.00
+  monitored_conditions:
+    - stationname
+    - barometerfc
+    - barometerfcname
+    - conditioncode
+    - condition
+    - conditiondetailed
+    - conditionexact
+    - symbol
+    - feeltemperature
+    - humidity
+    - temperature
+    - groundtemperature
+    - windspeed
+    - windforce
+    - winddirection
+    - windazimuth
+    - pressure
+    - visibility
+    - windgust
+    - precipitation
+    - irradiance
+    - precipitation_forecast_average
+    - precipitation_forecast_total
+    - rainlast24hour
+    - rainlasthour
+      # conditions for forecasted data:
+    - symbol_1d
+    - symbol_2d
+    - symbol_3d
+    - symbol_4d
+    - symbol_5d
+    - temperature_1d
+    - temperature_2d
+    - temperature_3d
+    - temperature_4d
+    - temperature_5d
+    - mintemp_1d
+    - rainchance_1d
+    - rainchance_2d
+    - sunchance_1d
+    - sunchance_2d
+    - rain_1d
+    - rain_2d
+    - minrain_1d
+    - maxrain_1d
+    - windforce_1d
+    - windforce_2d
+    - windspeed_1d
+    - windspeed_2d
+    - winddirection_1d
+    - winddirection_2d
+    - windazimuth_1d
+    - windazimuth_2d
 ```
-- You can use also the example sensoren
 
-## Example sensoren
----
+- Make the integration with [Buienradar radar map](https://www.home-assistant.io/integrations/sensor.buienradar/)
+
  ```yaml
-## DWAINS DASHBOARD        
-      - path: 'dwainscheeren/dwains-lovelace-dashboard'
-        name: Dwains Dashboard
-      - path: 'dwainscheeren/dwains-dashboard-addons'
-        name: Dwains Dashboard addons       
-        
-## HOME ASSISTANT        
-      - path: 'home-assistant/core'
-        name: Home Assistant Core
-      - path: 'home-assistant/supervisor'
-        name: Home Assistant Supervisor 
-      - path: 'home-assistant/home-assistant.io'
-        name: Home Assistant Website
-      - path: 'home-assistant/frontend'
-        name: Home Assistant Fronted
-      - path: 'home-assistant/operating-system'
-        name: Home Assistant OS
+# Example configuration.yaml entry
+camera:
+  - platform: buienradar
 ```
+
+### KMNI
+ ```yaml
+sensor:
+  - platform: scrape
+    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
+    select: "div.alert__heading"
+    name: "knmi weercode"
+    scan_interval: 300
+
+  - platform: scrape
+    resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
+    select: "a.alert__description"
+    name: "knmi weer waarschuwing"
+    scan_interval: 300    
+```
+
 
 ## Installation Add-on
 ---
