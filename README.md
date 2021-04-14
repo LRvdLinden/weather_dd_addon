@@ -84,10 +84,10 @@
 - Copy the `github` folder in to the `dwains-dashboard/addons/more_page` directory.
 - Open your `more_page.yaml` file in `dwains-dashboard/configs` and add the following;
  ```yaml
-     - name: Github
+     - name: Weather
        main_menu: 'true' #Show this addon in the main navigation bar!
-       icon: mdi:github
-       path: 'dwains-dashboard/addons/more_page/github/page.yaml'
+       icon: fas:cloud-sun-rain
+       path: 'dwains-dashboard/addons/more_page/weather/page.yaml'
 ```
 - Reload the theme configuration via Theme Settings
 
