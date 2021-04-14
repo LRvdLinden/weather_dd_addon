@@ -114,9 +114,7 @@ sensor:
       - windazimuth_2d
 ```
 
-
-
- ```yaml
+```yaml
 # Example configuration.yaml entry
 camera:
   - platform: buienradar
@@ -124,7 +122,7 @@ camera:
 
 ### KMNI sensor
 - Make the integration with [KNMI](https://www.home-assistant.io/integrations/scrape/)
- ```yaml
+```yaml
 sensor: 
   - platform: scrape
     resource: https://www.knmi.nl/nederland-nu/weer/waarschuwingen/gelderland #change provincie
@@ -141,14 +139,14 @@ sensor:
 
 ### Moon sensor
 - Make the integration with [Moon](https://www.home-assistant.io/integrations/moon/)
- ```yaml
+```yaml
 sensor: 
   - platform: moon   
 ```
 
 ### Season sensor
 - Make the integration with [Season](https://www.home-assistant.io/integrations/season/)
- ```yaml
+```yaml
 sensor: 
   - platform: season  
 ```
@@ -164,11 +162,11 @@ sun:
 ---
 - Copy the `weather` folder in to the `dwains-dashboard/addons/more_page` directory.
 - Open your `more_page.yaml` file in `dwains-dashboard/configs` and add the following;
- ```yaml
-     - name: Weather
-       main_menu: 'true' #Show this addon in the main navigation bar!
-       icon: fas:cloud-sun-rain
-       path: 'dwains-dashboard/addons/more_page/weather/page.yaml'
+```yaml
+  - name: Weather
+    main_menu: 'true' #Show this addon in the main navigation bar!
+    icon: fas:cloud-sun-rain
+    path: 'dwains-dashboard/addons/more_page/weather/page.yaml'
 ```
 - Reload the theme configuration via Theme Settings
 
