@@ -50,7 +50,7 @@ Please reboot Home Assistant after vonfig the sensors!
 ### Buienradar sensor + Radar map
 - Make the integration with [Buienradar](https://www.home-assistant.io/integrations/sensor.buienradar/)
 - Choose `latitude` and `longtiude` from the correct [weather station](https://www.google.com/maps/d/embed?mid=1NivHkTGQUOs0dwQTnTMZi8Uatj0&ll=52.92957401169076%2C5.184999999999995&z=7) 
- ```yaml
+```yaml
      # Example configuration.yaml entry
 sensor:
   - platform: buienradar
