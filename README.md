@@ -45,7 +45,7 @@
 
 ## Make Home Assistant integration 
 ---
-<h2>Please reboot Home Assistant after config the sensors!</h2>
+<h3>Please reboot Home Assistant after config the sensors!</h3>
 
 ### Buienradar sensor + Radar map
 - Make the integration with [Buienradar](https://www.home-assistant.io/integrations/sensor.buienradar/)
