@@ -173,8 +173,13 @@ sun:
 ## Replace the following
 ---
 - If some `sensors` not showing after this manual, please add the correct `sensor` to monitor
-
-
+- The dashboard will refresh every 10 minutes. When you want to skip this, delete the code between line 66 till 69
+```yaml
+ - cards:
+   Refresh: null
+   type: 'custom:auto-reload-card'
+   delay_in_minute: 10
+```
 
 ## Result
 ---
