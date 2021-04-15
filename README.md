@@ -248,7 +248,7 @@ sun:
 
 ## Result
 ---
-![vd-weer](https://user-images.githubusercontent.com/77990847/114725586-e590c200-9d3c-11eb-8c2d-ad4bbd616815.png)
+![image](https://user-images.githubusercontent.com/77990847/114860224-03693000-9dec-11eb-9878-ece886b44689.png)
 
 
 
