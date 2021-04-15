@@ -120,6 +120,67 @@ camera:
   - platform: buienradar
 ```
 
+### Ambee Pollen
+- Make the integration with [Ambee Pollen](https://api-dashboard.getambee.com/#/signup)
+```yaml
+### Ambee Pollen
+
+# Must be added in sensor.yml
+# replace LAT, LONG and API-KEY with your values
+
+- platform: rest
+  scan_interval: 3600
+  resource: https://api.ambeedata.com/latest/pollen/by-lat-lng?lat=LAT&lng=LONG
+  name: "Ambee Pollen"
+  headers:
+    content-type: "application/json"
+    x-api-key: "YOUR-API-KEY"
+  json_attributes_path: "$.data.['Risk']"
+  json_attributes:
+    - tree_pollen
+    - grass_pollen
+    - weed_pollen
+
+- platform: template
+  sensors:
+    ambee_pollen_tree:
+      icon_template: "mdi:tree-outline"
+      friendly_name: "tree"
+      value_template: >-
+        {% set state = state_attr('sensor.ambee_pollen', 'tree_pollen') %}
+        {% if state == "Low" %}Low
+        {% elif state == "Moderate"%}Moderate
+        {% elif state == "High"%}High
+        {% elif state == "Very High"%}Very High
+        {% else %}Unbekannt{% endif %}
+
+- platform: template
+  sensors:
+    ambee_pollen_weed:
+      icon_template: "mdi:nature"
+      friendly_name: "weed"
+      value_template: >-
+        {% set state = state_attr('sensor.ambee_pollen', 'weed_pollen') %}
+        {% if state == "Low" %}Low
+        {% elif state == "Moderate"%}Moderate
+        {% elif state == "High"%}High
+        {% elif state == "Very High"%}Very High
+        {% else %}Unbekannt{% endif %}
+
+- platform: template
+  sensors:
+    ambee_pollen_grass:
+      icon_template: "mdi:grass"
+      friendly_name: "grass"
+      value_template: >-
+        {% set state = state_attr('sensor.ambee_pollen', 'grass_pollen') %}
+        {% if state == "Low" %}Low
+        {% elif state == "Moderate"%}Moderate
+        {% elif state == "High"%}High
+        {% elif state == "Very High"%}Very High
+        {% else %}Unbekannt{% endif %}
+```
+
 ### KMNI sensor
 - Make the integration with [KNMI](https://www.home-assistant.io/integrations/scrape/)
 ```yaml
