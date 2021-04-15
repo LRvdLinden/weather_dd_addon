@@ -120,8 +120,12 @@ camera:
   - platform: buienradar
 ```
 
-### Ambee Pollen
+### Ambee Pollen sensoren
 - Make the integration with [Ambee Pollen](https://api-dashboard.getambee.com/#/signup)
+- Make sure you have reboot Home Assistant after that you have made the sensors!
+
+![image](https://user-images.githubusercontent.com/77990847/114853382-052ef580-9de4-11eb-9d23-4963ea8fc77a.png)
+
 ```yaml
 ### Ambee Pollen
 
