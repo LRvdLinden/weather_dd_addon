@@ -183,6 +183,30 @@ camera:
         {% elif state == "High"%}High
         {% elif state == "Very High"%}Very High
         {% else %}Unbekannt{% endif %}
+        
+    pollen_tree_count:
+      icon_template: "mdi:tree-outline"
+      friendly_name: "Bomen"
+      unit_of_measurement: " /mÂ³"
+      value_template: "{{ state_attr('sensor.pollen', 'Count')['tree_pollen'] }}"
+        
+    pollen_weed_count:
+      icon_template: "mdi:nature"
+      friendly_name: "Onkruid"
+      unit_of_measurement: " /mÂ³"
+      value_template: "{{ state_attr('sensor.pollen', 'Count')['weed_pollen'] }}"
+        
+    pollen_grass_count:
+      icon_template: "mdi:grass"
+      friendly_name: "Gras"
+      unit_of_measurement: " /mÂ³"
+      value_template: "{{ state_attr('sensor.pollen', 'Count')['grass_pollen'] }}"
+        
+    pollen_last_updated:
+      icon_template: "mdi:clock"
+      friendly_name: "Laatste update"
+      device_class: timestamp
+      value_template: "{{ state_attr('sensor.pollen', 'updatedAt') }}"
 ```
 
 ### KMNI sensor
