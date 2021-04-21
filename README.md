@@ -11,9 +11,6 @@
   <a href="https://github.com/LRvdLinden/weather_dd_addon">
     <img src="https://img.shields.io/github/v/release/LRvdLinden/weather_dd_addon" />
   </a>
-      <a href="https://github.com/LRvdLinden/weather_dd_addon">
-    <img src="https://img.shields.io/github/downloads/LRvdLinden/weather_dd_addon/latest/total?color=purple&label=%20release%20Downloads" />
-  </a>
     <a href="https://github.com/LRvdLinden/">
     <img src="https://img.shields.io/github/followers/LRvdLinden?style=social" />
   </a>
