@@ -124,6 +124,8 @@ camera:
 <img width="314" alt="image" src="https://user-images.githubusercontent.com/77990847/115065163-16642900-9eee-11eb-9074-1fb4d462b7ea.png">
 
 ### Custom Pollen card
+<img width="273" alt="image" src="https://user-images.githubusercontent.com/77990847/117539208-ed751680-b009-11eb-98ca-734e7f49efbc.png">
+
 
 - If you want to change the Pollen card, in the card above? Copy the following code instead of line `232` till `248`
 - Make sure you have installed the lovelace [multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row). This can be done manually or directly via hacs
