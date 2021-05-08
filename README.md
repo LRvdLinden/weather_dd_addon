@@ -121,7 +121,7 @@ camera:
 <img width="314" alt="image" src="https://user-images.githubusercontent.com/77990847/115065163-16642900-9eee-11eb-9074-1fb4d462b7ea.png">
 
 ### Custom Pollen card
-<img width="273" alt="image" src="<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117540800-282e7d00-b011-11eb-8612-36bf7131b627.png">">
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117540800-282e7d00-b011-11eb-8612-36bf7131b627.png">
 
 
 - If you want to change the Pollen card, in the card above? Copy the following code instead of line `232` till `248`
