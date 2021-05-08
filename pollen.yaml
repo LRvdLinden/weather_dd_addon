@@ -9,9 +9,11 @@ sensor: # deze uitzetten als er al meer sensoren tussen de lijst staan van je co
 # (zonder hekje ervoor)     ambee-api: XXXXXXXXX
 # Bron : https://gist.github.com/michilehr/7ce7431f97e82523336a120b50d0ebe2
   - platform: rest
-    scan_interval: 3600
+    scan_interval: 300
     resource: !secret ambee-resource   # ambee-resource: https://api.ambeedata.com/latest/pollen/by-lat-lng?lat=xx.xxxxxx&lng=x.xxxxxx
     name: "pollen"
+    value_template: >
+      {{ value_json.version}}
     headers:
       content-type: "application/json"
       x-api-key: !secret ambee-api # zodat je veilig het kunt delen     json_attributes_path: "$.data[0]"
