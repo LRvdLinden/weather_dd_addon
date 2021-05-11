@@ -120,6 +120,10 @@ camera:
 
 <img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117780609-14b52900-b240-11eb-95ab-a330967493c1.png">
 
+### UV index
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=http%3A%2F%2Fhomeassistant.local%3A8123%2Fconfig_flow_start%3Fdomain%3Dopenuv)
+
+![image](https://user-images.githubusercontent.com/77990847/117784741-28fb2500-b244-11eb-945a-19dc8f3c3ab0.png)
 
 
 ### KMNI sensor
