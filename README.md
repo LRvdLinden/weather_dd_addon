@@ -121,34 +121,13 @@ camera:
 <img width="314" alt="image" src="https://user-images.githubusercontent.com/77990847/115065163-16642900-9eee-11eb-9074-1fb4d462b7ea.png">
 
 ### Custom Pollen card
-<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117540800-282e7d00-b011-11eb-8612-36bf7131b627.png">
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117780609-14b52900-b240-11eb-95ab-a330967493c1.png">
 
 
 - If you want to change the Pollen card, in the card above? Copy the following code instead of line `232` till `248`
 - Make sure you have installed the lovelace [multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row). This can be done manually or directly via hacs
 
-```yaml
-            type: entities
-            entities:
-              - entity: sensor.pollen_grass_count
-                type: 'custom:multiple-entity-row'
-                entities:
-                  - entity: sensor.pollen_grass_risk
-                    name: false
-              - entity: sensor.pollen_tree_count
-                type: 'custom:multiple-entity-row'
-                entities:
-                  - entity: sensor.pollen_tree_risk
-                    name: false
-              - entity: sensor.pollen_weed_count
-                type: 'custom:multiple-entity-row'
-                entities:
-                  - entity: sensor.pollen_weed_risk
-                    name: false
-              - entity: sensor.pollen_last_updated
-            state_color: true
-            title: Pollen
-```
+
 
 ### KMNI sensor
 - Make the integration with [KNMI](https://www.home-assistant.io/integrations/scrape/)
