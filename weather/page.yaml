@@ -24,7 +24,7 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Forecast
+                            name: Forecast # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -33,19 +33,19 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Stats
+                            name: Stats # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -75,13 +75,13 @@
                             color: darkgray !important;
                             margin-left: 2px !important;
                           }
-                        entity: weather.thuis
+                        entity: weather.thuis # <- fill in the right entity
                         show_forecast: true
                       - type: 'custom:auto-reload-card'
                         Refresh: null
                         delay_in_minute: 10
                       - type: 'custom:neerslag-card'
-                        title: Voorspelling
+                        title: Voorspelling # <- translate the card name
                         icon: 'ios:cloud-rain'
                         style: |
                           ha-card {
@@ -120,13 +120,13 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Forecast
+                            name: Forecast # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -135,13 +135,13 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Stats
+                            name: Stats # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -150,7 +150,7 @@
                   - type: vertical-stack
                     cards:
                       - type: 'custom:neerslag-card'
-                        title: Voorspelling
+                        title: Voorspelling # <- translate this line
                         icon: 'ios:cloud-rain'
                         style: |
                           ha-card {
@@ -179,7 +179,7 @@
                           - sensor.neerslag_buienradar_regen_data
                           
                       - type: 'custom:mini-graph-card'
-                        title: Afgelopen 24uur
+                        title: Afgelopen 24uur # <- translate this line
                         icon: 'ios:cloud-rain'
                         style: |
                           ha-card {
@@ -204,7 +204,7 @@
                             margin-left: 2px !important;
                           }
                         entities:
-                          - sensor.apeldoorn_rain_last_24h
+                          - sensor.apeldoorn_rain_last_24h # <- fill in the right sensor
                         line_color: '#299ec2'
                         hours_to_show: 12
                         line_width: 1
@@ -223,7 +223,7 @@
                           average: true   
                           
                       - type: 'custom:mini-graph-card'
-                        title: Afgelopen uur
+                        title: Afgelopen uur # <- translate this line
                         icon: 'ios:cloud-rain'
                         style: |
                           ha-card {
@@ -248,7 +248,7 @@
                             margin-left: 2px !important;
                           }
                         entities:
-                          - sensor.apeldoorn_rain_last_hour
+                          - sensor.apeldoorn_rain_last_hour # <- fill in the right sensor
                         line_color: '#299ec2'
                         hours_to_show: 12
                         line_width: 1
@@ -278,19 +278,19 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Forecast
+                            name: Forecast # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -299,7 +299,7 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Stats
+                            name: Stats # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -368,7 +368,7 @@
                             margin-left: 2px !important;
                           }
                         entities:
-                          - sensor.netatmo_netatmo_huis_netatmo_woonkamer_netatmo_tuin_temperature
+                          - sensor.netatmo_netatmo_huis_netatmo_woonkamer_netatmo_tuin_temperature # <- fill in the right sensor
                         line_color: '#299ec2'
                         font_size: 80
                         hours_to_show: 12
@@ -388,7 +388,7 @@
                           average: true   
                           
                       - type: 'custom:mini-graph-card'
-                        title: Gevoelstemperatuur
+                        title: Gevoelstemperatuur # <- translate this line
                         icon: 'ios:thermometer'
                         style: |
                           ha-card {
@@ -413,7 +413,7 @@
                             margin-left: 2px !important;
                           }
                         entities:
-                          - sensor.apeldoorn_feel_temperature
+                          - sensor.apeldoorn_feel_temperature # <- fill in the right sensor
                         line_color: '#299ec2'
                         font_size: 80
                         hours_to_show: 12
@@ -433,7 +433,7 @@
                           average: true       
                           
                       - type: 'custom:mini-graph-card'
-                        title: Grondtemperatuur
+                        title: Grondtemperatuur # <- translate this line
                         icon: 'ios:thermometer'
                         style: |
                           ha-card {
@@ -458,7 +458,7 @@
                             margin-left: 2px !important;
                           }
                         entities:
-                          - sensor.apeldoorn_ground_temperature
+                          - sensor.apeldoorn_ground_temperature # <- fill in the right sensor
                         line_color: '#299ec2'
                         font_size: 80
                         hours_to_show: 12
@@ -491,25 +491,25 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Forecast
+                            name: Forecast # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Stats
+                            name: Stats # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -554,17 +554,17 @@
                               type: section
                               label: Meer informatie
                             entities:
-                              - entity: sensor.apeldoorn_barometer
-                              - entity: sensor.apeldoorn_barometer_value
-                              - entity: sensor.apeldoorn_humidity
-                              - entity: sensor.apeldoorn_pressure
-                              - entity: sensor.apeldoorn_visibility
-                              - entity: sensor.apeldoorn_wind_speed
+                              - entity: sensor.apeldoorn_barometer # <- fill in the right sensor
+                              - entity: sensor.apeldoorn_barometer_value # <- fill in the right sensor
+                              - entity: sensor.apeldoorn_humidity # <- fill in the right sensor
+                              - entity: sensor.apeldoorn_pressure # <- fill in the right sensor
+                              - entity: sensor.apeldoorn_visibility # <- fill in the right sensor
+                              - entity: sensor.apeldoorn_wind_speed # <- fill in the right sensor
                                 name: Wind snelheid
-                              - entity: sensor.apeldoorn_wind_direction
+                              - entity: sensor.apeldoorn_wind_direction # <- fill in the right sensor
                                 name: Wind richting
                                 icon: 'fas:compass'
-                              - entity: sensor.apeldoorn_ground_temperature
+                              - entity: sensor.apeldoorn_ground_temperature # <- fill in the right sensor
                                 name: Grond temperatuur
                         
                                     
@@ -651,7 +651,7 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Radar
+                            name: Radar # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -660,25 +660,25 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Wind
+                            name: Wind # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#wind"
                           - type: custom:button-card
-                            #name: Stats
+                            #name: Stats # <- DONT CHANGE THIS LINE
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -722,13 +722,13 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Radar
+                            name: Radar # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -737,19 +737,19 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Wind
+                            name: Wind # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#wind"
                           - type: custom:button-card
-                            #name: Stats
+                            #name: Stats # <- DONT CHANGE THIS LINE
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -795,25 +795,25 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Radar
+                            name: Radar # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Wind
+                            name: Wind # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -822,7 +822,7 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            #name: Stats
+                            #name: Stats # <- DONT CHANGE THIS LINE
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -869,19 +869,19 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Radar
+                            name: Radar # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -890,13 +890,13 @@
                               name:
                                 - color: var(--dwains-theme-accent)
                           - type: custom:button-card
-                            name: Wind
+                            name: Wind # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#wind"
                           - type: custom:button-card
-                            #name: Stats
+                            #name: Stats # <- DONT CHANGE THIS LINE
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
@@ -943,31 +943,31 @@
                       - type: horizontal-stack
                         cards:
                           - type: custom:button-card
-                            name: Radar
+                            name: Radar # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#forecast"
                           - type: custom:button-card
-                            name: Neerslag
+                            name: Neerslag # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#neerslag"
                           - type: custom:button-card
-                            name: Temp
+                            name: Temp # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#temperatuur"
                           - type: custom:button-card
-                            name: Wind
+                            name: Wind # <- translate the button name
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
                               navigation_path: "#wind"
                           - type: custom:button-card
-                            #name: Stats
+                            #name: Stats # <- DONT CHANGE THIS LINE
                             template: partials_heading_switch
                             tap_action: 
                               action: navigate
