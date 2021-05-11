@@ -24,7 +24,7 @@
 
 
 <p align="center">
-  <img src="https://image.freepik.com/free-vector/weather-vector-banner_36298-522.jpg" />
+  <img src="https://user-images.githubusercontent.com/77990847/117780151-a6706680-b23f-11eb-84d2-e502eaae5bc4.png" />
 </p>
 
 
@@ -213,7 +213,13 @@ sun:
 
 ## Result
 ---
-![IMG_0557](https://user-images.githubusercontent.com/77990847/116807242-594f0f00-ab32-11eb-994a-42b7f1970e9c.PNG)
+![image](https://user-images.githubusercontent.com/77990847/117780151-a6706680-b23f-11eb-84d2-e502eaae5bc4.png)
+
+![image](https://user-images.githubusercontent.com/77990847/117780215-b720dc80-b23f-11eb-9158-36574841576c.png)
+
+![image](https://user-images.githubusercontent.com/77990847/117780265-c2740800-b23f-11eb-9afb-65c6eaee070b.png)
+
+![image](https://user-images.githubusercontent.com/77990847/117780368-d91a5f00-b23f-11eb-88b8-741e067910aa.png)
 
 
 
