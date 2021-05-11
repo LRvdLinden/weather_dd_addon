@@ -196,7 +196,7 @@ sun:
 
 ![image](https://user-images.githubusercontent.com/77990847/117780215-b720dc80-b23f-11eb-9158-36574841576c.png)
 
-![image](https://user-images.githubusercontent.com/77990847/117780265-c2740800-b23f-11eb-9afb-65c6eaee070b.png)
+![image](https://user-images.githubusercontent.com/77990847/117789187-5ba71c80-b248-11eb-8ddc-45f8029a4936.png)
 
 ![image](https://user-images.githubusercontent.com/77990847/117780368-d91a5f00-b23f-11eb-88b8-741e067910aa.png)
 
