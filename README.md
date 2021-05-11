@@ -120,7 +120,7 @@ camera:
 
 <img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117780609-14b52900-b240-11eb-95ab-a330967493c1.png">
 
-### UV index
+### OpenUV
 - To get the UV index card into the weather dashboard, make sure you have created a [API](https://www.openuv.io/) at [OpenUV](https://www.openuv.io/)
 - After creating the API, install the [OpenUV](https://www.openuv.io/) integartion bij clikking on the button below.
 
