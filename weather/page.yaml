@@ -77,7 +77,7 @@
                           }
                         entity: weather.thuis_openweathermap_daily # <- fill in the right sensor
                         current: true
-                        details: true
+                        details: false
                         forecast: true
                         hourly_forecast: false
                         number_of_forecasts: '5'
