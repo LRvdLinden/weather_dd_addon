@@ -161,7 +161,8 @@ camera:
 - Make the integration with [Ambee Pollen](https://api-dashboard.getambee.com/#/signup)
 - Download the file `pollen.yaml` and place it in youre `sensor` directory or copy it in to `configuration.yaml`
 
-<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/117780609-14b52900-b240-11eb-95ab-a330967493c1.png">
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/77990847/118349327-64e9ff00-b550-11eb-9387-db6284ceba9a.gif">
+
 
 ### OpenUV
 - To get the UV index card into the weather dashboard, make sure you have created a [API](https://www.openuv.io/) at [OpenUV](https://www.openuv.io/)
