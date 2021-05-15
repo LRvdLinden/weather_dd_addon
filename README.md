@@ -37,7 +37,7 @@
 
 ## Prerequisite
 ---
-- Make sure you have installed the lovelace [mini-graph-card](https://github.com/kalkih/mini-graph-card), [auto-reload-card](https://github.com/ben8p/lovelace-auto-reload-card), [fontawesome icons](https://github.com/thomasloven/hass-fontawesome), [Cupertino Icons](https://github.com/menahishayan/HomeAssistant-Cupertino-Icons), [Button Card](https://github.com/custom-cards/button-card), [HA card Weather Conditions](https://github.com/r-renato/ha-card-weather-conditions), [fold-entity-row](https://github.com/thomasloven/lovelace-fold-entity-row), [multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row) and the integration [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app). This can be done manually or directly via hacs
+- Make sure you have installed the lovelace [mini-graph-card](https://github.com/kalkih/mini-graph-card), [auto-reload-card](https://github.com/ben8p/lovelace-auto-reload-card), [Weather Card](https://github.com/bramkragten/weather-card), [fontawesome icons](https://github.com/thomasloven/hass-fontawesome), [Cupertino Icons](https://github.com/menahishayan/HomeAssistant-Cupertino-Icons), [Button Card](https://github.com/custom-cards/button-card), [HA card Weather Conditions](https://github.com/r-renato/ha-card-weather-conditions), [fold-entity-row](https://github.com/thomasloven/lovelace-fold-entity-row), [multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row) and the integration [Neerslag app](https://github.com/aex351/home-assistant-neerslag-app). This can be done manually or directly via hacs
 
 <img width="618" alt="image" src="https://user-images.githubusercontent.com/77990847/114733529-b6ca1a00-9d43-11eb-876a-6f4beda466ec.png">
 
@@ -118,6 +118,43 @@ sensor:
 # Example configuration.yaml entry
 camera:
   - platform: buienradar
+```
+
+### Weather Card based on Dark Sky or OpenWeather Map
+![weather](https://user-images.githubusercontent.com/77990847/118349028-687c8680-b54e-11eb-991d-38cdfe02ae69.gif)
+
+```yaml
+                  - type: vertical-stack
+                    cards:
+                      - type: 'custom:weather-card'
+                        style: |
+                          ha-card {
+                            border-radius: 10px;
+                            padding-bottom: 10px;
+                            background-color: var(--dwains-theme-primary)
+                          }
+                          :host {
+                            --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                          }
+                          .card-header {
+                            padding: 5px 16px;
+                            font-size: 15px;
+                            font-weight: 700 !important;
+                          }
+                          #states {
+                            padding-top: 0px !important;
+                            padding-bottom: 0px !important;
+                          }
+                          .secondary {
+                            color: darkgray !important;
+                            margin-left: 2px !important;
+                          }
+                        entity: weather.thuis_openweathermap_daily
+                        current: true
+                        details: true
+                        forecast: true
+                        hourly_forecast: false
+                        number_of_forecasts: '5'
 ```
 
 ### Ambee Pollen sensoren
